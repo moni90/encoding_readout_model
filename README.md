@@ -4,12 +4,14 @@ Supplementary code for the paper "Correlations enhance the behavioral readout of
 The repository contains the code to reproduce Figure 2 d, e, f right, g, h, I right, j, k, Figure 3 and Extended Data Figure 4.
 It is structured as follows:
 -	Encoding_readout_model: scripts in this folder are the main scripts for the generation of simulated data. In particular, the main scripts to run is main_model_pipeline.m;
-o	Simulation_output_files: simulated data are automatically saved in this subfolder as .fig, .png or .svg files;
-o	Simulation_figures: users can save the final figures in this subfolder;
-	Data_for_figures: data necessary to generated figures can be saved in this subfolder in .mat or .csv format;
-o	Utilities: auxiliary scripts necessary to run the analyses and generate figures, but not specific to the encoding-readout model are saved in this folder and its subfolders
+  - Utilities: auxiliary scripts necessary to run the analyses and generate figures, but not specific to the encoding-readout model are saved in this folder and its subfolders
+  - Simulation_output_files: simulated data are automatically saved in this subfolder as .fig, .png or .svg files;
+  - Simulation_figures: users can save the final figures in this subfolder;
+     - Data_for_figures: data necessary to generated figures can be saved in this subfolder in .mat or .csv format;
+  
 
-*main_model_pipeline.m*
+**main_model_pipeline.m**
+
 Running this script users can generate simulated data. Parameters to be set are:
 -	save_figs, save_figs_data: binary flags to save the generated figures and their data
 -	n_simu: number of simulations
@@ -39,5 +41,6 @@ For Figure 3 and Extended Data Figure 4
 -	N_range: 20 (Fig. 3) or 10 (ED Fig. 4)
 -	Consistency_idx: 3
 
-*main_generate_Fig2.m*
+**main_generate_Fig2.m**
+
 Running this script users can reproduce Figure 2 d, e, f right, g, h, I right, j, k.
